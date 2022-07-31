@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/sass/main.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cursor">
+        <div class="circle"></div>
+        <div class="cursor-dot"></div>
+    </div>
+    <header class="header" style="visibility: hidden; position: absolute;">
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Skills</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="right__content">
+            <div class="inner-content">
+                <img class="author-image" src="./src/img/download.png" alt="the author image">
+                <div class="img-decor img-decor-1"></div>
+                <div class="img-decor img-decor-2"></div>
+                <div class="img-decor img-decor-3"></div>
+            </div>
+        </div>
+        <div class="left__content">
+            <div class="container">
+                <section class="intro">
+                    <span class="section-name into__name">introduction</span>
+                    <h1 class="intro__title">I'm a Front-end Developer & Technology Expert</h1>
+                    <span class="decor-line"></span>
+                </section>
+                <section class="about">
+                    <span class="section-name">about</span>
+                    <h2 class="about__title">My approach to building <br/> the tech brands of tomorrow.</h2>
+                    <span class="decor-line"></span>
+                    <p class="about__text">I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative.
+                        I am able to work well under pressure and adhere to strict deadlines.</p>
+                </section>
+                <section class="skills">
+                    <span class="section-name">skills</span>
+                    <h2 class="about__title">Skills I have collected <br/> over the years and days.</h2>
+                    <span class="decor-line"></span>
+                    <ul class="skills-list">
+                        <li class="skills-list__item">
+                            <span class="skills-list__name">HTML/CSS</span>
+                            <span class="skills-list__bar skill-html"></span>
+                        </li>
+                        <li class="skills-list__item">
+                            <span class="skills-list__name">Javascript</span>
+                            <span class="skills-list__bar skill-js"></span>
+                        </li>
+                        <li class="skills-list__item">
+                            <span class="skills-list__name">WordPress</span>
+                            <span class="skills-list__bar skill-cmsw"></span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="experience">
+                    <span class="section-name">resume</span>
+                    <h2 class="experience__title">Experience</h2>
+                    <span class="decor-line"></span>
+                    <p class="experience__text">Lorem ipsum dolor sit amet, consectetur. Adipiscing elit. Aenean et elementum purus.</p>
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <p class="timeline__period">WordPress 2019-2021</p>
+                            <p class="timeline__position">Customer Support Manager</p>
+                            <p class="timeline__text">Lorem Ipsum is simply dummy text of the printing industry.</p>
+                        </div>
+                        <div class="timeline__item">
+                            <p class="timeline__period">School 2017-2019</p>
+                            <p class="timeline__position">Mathematics teacher</p>
+                            <p class="timeline__text">Lorem Ipsum is simply dummy text of the printing industry.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="portfolio">
+                    <span class="section-name">Portfolio</span>
+                    <h2 class="experience__title">Selected Work</h2>
+                    <span class="decor-line"></span>
+                    <div class="portfolio__list">
+                        <a class="portfolio__item item1" href="./">
+                            <div class="portfolio__content">
+                                <p class="portfolio__name">Portfolio</p>
+                                <span class="decor-line"></span>
+                            </div>
+
+                        </a>
+                    </div>
+                </section>
+                <section class="code">
+                    <span class="section-name">code</span>
+                    <h2 class="experience__title">My Coding Style</h2>
+                    <span class="decor-line"></span>
+                    <div class="code-example">
+                        <div class="code-line">
+                            <code>
+                            function inArray (array1, array2) { <br> &nbsp;&nbsp;&nbsp;&nbsp;let r = array1.filter(currentV =&gt; { <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let
+                            count = 0<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (let j = 0; j &lt; array2.length; j++) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(array2[j].includes(currentV)) {<br>                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count++
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return count &gt; 0 ? true : false<br> &nbsp;&nbsp;&nbsp;&nbsp;}).sort()
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;r;
+                            <br> }
+                            </code>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="education">
+                    <span class="section-name">education</span>
+                    <h2 class="experience__title">My Education</h2>
+                    <span class="decor-line"></span>
+                    <p>Moscow State University in Tashkent</p>
+                    <p>2017</p>
+                </section>
+                <section class="languages">
+                    <span class="section-name">Languages</span>
+                    <h2 class="experience__title">Languages I speak</h2>
+                    <span class="decor-line"></span>
+                    <ul class="languages-list">
+                        <li class="languages-item">English (Upper Intermediate)</li>
+                        <li class="languages-item">Russian (Native)</li>
+                        <li class="languages-item">Uzbek (Native)</li>
+                    </ul>
+                </section>
+                <section class="contacts">
+                    <span class="section-name">Contact</span>
+                    <h2 class="experience__title">Let's get in touch.</h2>
+                    <span class="decor-line"></span>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <a href="mailto:nazima.jumanyizaova@mail.com" class="">Email: nazima.jumanyizaova@mail.com</a></li>
+                        <li class="contacts__item">Telegram: @nazima_jm</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <ul class="footer__list">
+                <li>
+                    <a href="https://github.com/nazimajumaniyazova">
+                        <span class="github"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://rs.school/">
+                        <span class="icon-rsschool"></span>
+                    </a>
+                </li>
+                <li class="footer__item">&copy;&nbsp;2021</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./src/js/scroll.js"></script>
+    <script src="./src/js/cursor.js"></script>
+</body>
+
+</html>
