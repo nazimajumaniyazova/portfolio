@@ -1,7 +1,13 @@
 .main {
     display: flex;
+    height: 100vh;
+    overflow: hidden;
+    transition: all .3s ease;
 }
-
+.main_transformed{
+    transform: translate(-24%, 0);
+    opacity: 0.45;
+}
 .right__content {
     position: fixed;
     width: 26vw;
@@ -9,15 +15,25 @@
     left: 25%;
     top: 50%;
     transform: translate(-50%, -50%);
-   // transform: scale3d(20deg, -20deg, 20deg);
 }
 .inner-content{
+    position: relative;
     transform: perspective(500px) rotateY(8deg);
 }
 .author-image {
     width: 100%;
 }
-
+.author-name{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    @include font($size: 1.5rem, $height: 2.4rem, $weight: 300);
+    letter-spacing: 0.336px;
+    color: $color-light;
+    >p{
+        margin-bottom: 5px;
+    }
+}
 .img-decor {
     position: absolute;
     height: 98%;

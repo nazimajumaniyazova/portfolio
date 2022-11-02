@@ -16,7 +16,13 @@
         <div class="circle"></div>
         <div class="cursor-dot"></div>
     </div>
-    <header class="header" style="visibility: hidden; position: absolute;">
+    <div class="menu-button">
+        <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+        </div>
+    </div>
+    <header class="header">
         <nav class="nav">
             <ul class="menu">
                 <li class="menu__item">
@@ -37,6 +43,10 @@
     <main class="main">
         <div class="right__content">
             <div class="inner-content">
+                <div class="author-name">
+                    <p>Nazima Jumaniyazova</p>
+                    <span class="decor-line"></span>
+                </div>
                 <img class="author-image" src="./src/img/download.png" alt="the author image">
                 <div class="img-decor img-decor-1"></div>
                 <div class="img-decor img-decor-2"></div>
@@ -157,25 +167,9 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="container footer__wrapper">
-            <ul class="footer__list">
-                <li>
-                    <a href="https://github.com/nazimajumaniyazova">
-                        <span class="github"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://rs.school/">
-                        <span class="icon-rsschool"></span>
-                    </a>
-                </li>
-                <li class="footer__item">&copy;&nbsp;2021</li>
-            </ul>
-        </div>
-    </footer>
     <script src="./src/js/scroll.js"></script>
     <script src="./src/js/cursor.js"></script>
+    <script src="./src/js/burger.js"></script>
 </body>
 
 </html>
