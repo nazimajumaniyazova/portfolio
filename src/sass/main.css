@@ -314,10 +314,58 @@ h2 {
   border-radius: 100%;
 }
 
+.provoke-scroll {
+  position: fixed;
+  bottom: 7.6rem;
+  right: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.provoke-scroll_active {
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.provoke-scroll__line {
+  position: relative;
+  top: 0;
+  left: 50%;
+  height: 5rem;
+  width: 0.1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.provoke-scroll__moving-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-animation: mymove 3s infinite;
+          animation: mymove 3s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.provoke-scroll__text {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  transform: rotate(90deg) translateX(50%);
+}
+
 .main {
   display: flex;
   height: 100vh;
-  overflow: hidden;
   transition: all 0.3s ease;
 }
 

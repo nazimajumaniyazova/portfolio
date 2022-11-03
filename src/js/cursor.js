@@ -25,5 +25,5 @@ function aimateCircle(){
   },300)
 }
 
-window.addEventListener('mousemove', moveCircle)
-window.addEventListener('mousedown', aimateCircle)
+window.addEventListener('mousemove', moveCircle);
+window.addEventListener('mousedown', aimateCircle);
