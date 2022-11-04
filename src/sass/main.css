@@ -489,7 +489,7 @@ h2 {
 }
 
 .intro {
-  padding: 153px 0px;
+  padding: 153px 0;
 }
 
 .into__name {
@@ -656,4 +656,8 @@ h2 {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.2rem;
+}
+
+.about {
+  padding-top: 53px;
 }/*# sourceMappingURL=main.css.map */
