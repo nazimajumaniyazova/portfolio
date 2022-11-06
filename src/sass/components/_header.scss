@@ -6,19 +6,51 @@
     top: 0;
     height: 100%;
     display: flex;
+    align-items: center;
     background: $color-header-bg;
     transform: translate(100%,0);
     transition: all .3s ease;
 }
 .header_active{
     transform: translate(0,0);
-
 }
 .nav{
     position: relative;
     width: 46%;
     left: 30%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 100px;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.7rem;
+}
+.menu__link{
+  font-size: 2.2rem;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all .3s ease;
+  &:hover{
+    color:#FDC60C;
+  }
+  &:hover .meni-icon{
+    background-color:#FDC60C;
+  }
+}
+
+.socials{
+  display: flex;
+  gap: 20px;
+}
+.socials__link{
+  &:hover .socials__icon{
+    background-color:#FDC60C;
+  }
 }

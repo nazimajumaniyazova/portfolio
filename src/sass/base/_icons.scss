@@ -12,3 +12,47 @@
     height: 20px;
     background-repeat: no-repeat;
 }
+.meni-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #7C7C7C;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  transition: all .3s ease;
+}
+.icon-download {
+  mask-image: url('../../src/img/iconmonstr-download-thin.svg');
+}
+.icon-location{
+  mask-image: url('../../src/img/iconmonstr-location-pin-thin.svg');
+}
+.icon-user{
+  mask-image: url('../../src/img/iconmonstr-user-male-thin.svg');
+}
+.icon-skills{
+  mask-image: url('../../src/img/iconmonstr-tools-8.svg');
+}
+.icon-portfolio{
+  mask-image: url('../../src/img/iconmonstr-view-6.svg');
+}
+.icon-contact{
+  mask-image: url('../../src/img/iconmonstr-phone-thin.svg');
+}
+.socials__icon{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #7C7C7C;
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  transition: all .3s ease;
+}
+.icon-github{
+  mask-image: url('../../src/img/github.svg');
+}
+.icon-telegram{
+  mask-image: url('../../src/img/iconmonstr-telegram-1.svg');
+}
