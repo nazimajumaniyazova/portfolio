@@ -1,8 +1,15 @@
 .main {
     display: flex;
-    height: 100vh;
+  //  min-height: 100vh;
     // overflow: hidden;
     transition: all .3s ease;
+  //  position: relative;
+  //  transform: translate(0%,0%);
+    // border: 1px solid yellow;
+    position: relative;
+    top: 0;
+    //left: -24%;
+  
 }
 .main_transformed{
     transform: translate(-24%, 0);
@@ -10,10 +17,13 @@
 }
 .right__content {
     position: fixed;
-    width: 26vw;
-    height: 32vw;
+    // max-width: 26vw;
+    // max-height: 32vw;
+    width: 399px;
+    height: 521px;
     left: 25%;
     top: 50%;
+    transition: all .3s ease;
     transform: translate(-50%, -50%);
 }
 .inner-content{
@@ -68,4 +78,5 @@
 .left__content {
     position: relative;
     left: 50%;
+
 }
