@@ -1,84 +1,99 @@
-::-moz-selection { /* Code for Firefox */
-    color: $color-primary;
-   
-  }
-  
-  ::selection {
-    color: $color-primary;
+::-moz-selection {
+  /* Code for Firefox */
+  color: $color-primary;
+}
 
-  }
+::selection {
+  color: $color-primary;
+}
 html {
-    box-sizing: border-box;
-    font-size: 10px;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  font-size: calc(100vw / 192);
 }
-
-@media(max-width:996px) {
-    html {
-        font-size: 8px;
-    }
-}
-
-@media(max-width:796px) {
-    html {
-        font-size: 6px;
-    }
+@media (max-width: 649px) {
+  html {
+    font-size: calc(100vw / 150);
+  }
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    @extend %font-primary;
-    @include font($size: 2.7rem, $height: 3.8rem, $weight: 300);
-    color: $color-text;
-    background-color: $color-secondary;
+  @extend %font-primary;
+  @include font($size: 2.7rem, $height: 3.8rem, $weight: 300);
+  color: $color-text;
+  background-color: $color-secondary;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 section {
-    padding-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 h1 {
-    @include font($size: 8.0rem, $height: 8.0rem, $weight: 200);
-    color: $color-light;
-    letter-spacing: -0.4px;
+  @include font($size: 10rem, $height: 1em, $weight: 200);
+  color: $color-light;
+  letter-spacing: -0.4px;
 }
-
+@media (max-width: 800px) {
+  h1 {
+    font-size: 16rem;
+  }
+}
 h2 {
-    @include font($size: 4.0rem, $height: 4.0rem, $weight: 300);
-    letter-spacing: -0.2px;
-    color: $color-light;
-    margin-bottom: 28px;
-    padding-left: 8px;
+  @include font($size: 5rem, $height: 1, $weight: 300);
+  letter-spacing: -0.2px;
+  color: $color-light;
+  margin-bottom: 28px;
+  padding-left: 8px;
 }
-
+@media (max-width: 800px) {
+  h2 {
+    font-size: 10rem;
+  }
+}
+p {
+  @include font($size: 3.4rem, $height: 1.4em, $weight: 300);
+  letter-spacing: -0.005em;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 6rem;
+    line-height: 1.4em;
+  }
+}
 .section-name {
-    display: inline-block;
-    @include font($size: 1.1rem, $height: 1.5rem, $weight: 700);
-    color: $color-light;
-    text-transform: uppercase;
-    letter-spacing: 1.456px;
-    margin-bottom: 39px;
+  display: inline-block;
+  @include font($size: 1.6rem, $height: 1.5rem, $weight: 700);
+  color: $color-light;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 39px;
 }
-
+@media (max-width: 800px) {
+  .section-name {
+    font-size: 2.5rem;
+  }
+}
 .decor-line {
-    display: inline-block;
-    width: 40px;
-    border-color: $color-light;
-    border-style: solid;
-    border-bottom-width: 0.1rem;
-    margin-bottom: 32px;
+  display: inline-block;
+  width: 40px;
+  border-color: $color-light;
+  border-style: solid;
+  border-bottom-width: 0.1rem;
+  margin-bottom: 32px;
 }

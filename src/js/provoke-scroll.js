@@ -1,25 +1,28 @@
-const movingLine = document.querySelector(".provoke-scroll__moving-line");
+const movingLine = document.querySelector('.provoke-scroll__moving-line');
 const provokeScroll = document.querySelector('.provoke-scroll');
 
-function animateLine(){
+function animateLine() {
   let pos = -100;
-  setInterval(frame,15)
-  function frame(){
-    if(pos === 100){
-      pos = -100
-    }else{
-      movingLine.style.top = pos + '%'
+  setInterval(frame, 15);
+  function frame() {
+    if (pos === 100) {
+      pos = -100;
+    } else {
+      movingLine.style.top = pos + '%';
       pos++;
     }
   }
 }
-animateLine()
 
-function onScroll(){
-  if(window.pageYOffset > 400){
-      provokeScroll.classList.add('provoke-scroll_active')
-  }else{
-    provokeScroll.classList.remove('provoke-scroll_active')
+function onScroll() {
+  if (window.pageYOffset > 400) {
+    provokeScroll.classList.add('provoke-scroll_active');
+  } else {
+    provokeScroll.classList.remove('provoke-scroll_active');
   }
 }
-window.onscroll = onScroll;
+
+animateLine();
+window.addEventListener('scroll', () => {
+  onScroll();
+});

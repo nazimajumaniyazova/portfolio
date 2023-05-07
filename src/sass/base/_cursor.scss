@@ -33,3 +33,7 @@
     background-color: $color-primary;
     border-radius: 100%;
 }
+@media (max-width: 800px) {
+  .cursor{display: none;}
+
+}

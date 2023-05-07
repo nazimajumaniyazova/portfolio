@@ -63,3 +63,14 @@
         background-color: $color-light;
     }
 }
+@media (max-width: 800px) {
+  .skills-list__item {
+    height: 9rem;
+    font-size: 5rem;
+  }
+  .languages-item,
+  .contacts__item {
+    font-size: 6rem;
+    line-height: 1.4em;
+  }
+}
